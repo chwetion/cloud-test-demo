@@ -1,0 +1,12 @@
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.foxmail.chwetion.cloudtestdemo.entity
+server:
+  port: 8080
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.1.11.188:33002/cloud_test_demo?useUnicode=true&characterEncoding=utf-8&tinyInt1isBit=false
+    driver-class-name: com.mysql.jdbc.Driver
+version: v1.0
