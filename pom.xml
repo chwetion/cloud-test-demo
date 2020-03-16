@@ -11,6 +11,7 @@
     <groupId>com.foxmail.chwetion</groupId>
     <artifactId>cloud-test-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>cloud-test-demo</name>
     <description>Test demo project for cloud platform</description>
 
@@ -23,6 +24,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- mybatis -->
