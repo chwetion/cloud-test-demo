@@ -46,7 +46,7 @@ GET /book/add?bookName={bookName}&price={price}&store={store}
 
 #### 根据名称模糊查询图书
 
-GET /query/{name}
+GET /book/query/{name}
 
 - name string 图书名
 
@@ -54,13 +54,13 @@ GET /query/{name}
 
 #### 查询所有图书
 
-GET /query 
+GET /book/query 
 
 返回浏览器可显示的字符串
 
 #### 按照价格升序查询前几本图书
 
-GET /query/{number}
+GET /book/query/{number}
 
 - number int 查询的数量
 
